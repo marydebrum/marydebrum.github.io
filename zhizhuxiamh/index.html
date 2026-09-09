@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蜘蛛侠漫画-蜘蛛侠漫画全系列阅读指南与推荐</title>
+    <meta name="description" content="蜘蛛侠漫画全系列深度阅读指南，从经典起源到现代多元宇宙，为你梳理必读篇章、热门角色与正确阅读顺序，助你轻松入坑漫威最受欢迎的超级英雄漫画。">
+    <meta name="keywords" content="蜘蛛侠漫画,蜘蛛侠,漫威漫画,彼得帕克,迈尔斯莫拉莱斯,漫画阅读顺序,超级英雄漫画推荐">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: #f4f6fb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header.site-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: 4px solid #e62429;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .brand h1 {
+            font-size: 1.9rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            background: linear-gradient(to right, #ff4d4d, #e62429);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .brand p {
+            font-size: 0.9rem;
+            color: #a0b3c9;
+            margin-top: 4px;
+        }
+        nav.main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+        nav.main-nav a {
+            color: #d1dbe9;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        nav.main-nav a:hover {
+            color: #fff;
+            border-bottom-color: #e62429;
+        }
+        .hero {
+            background: linear-gradient(145deg, #0a0f24 0%, #1a2a4f 100%);
+            color: #fff;
+            padding: 60px 0 50px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.3rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #cbd5e1;
+        }
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .hero-tags span {
+            background: rgba(230, 36, 41, 0.2);
+            border: 1px solid #e62429;
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: #ffb3b5;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 50px 0 30px;
+            padding-left: 16px;
+            border-left: 5px solid #e62429;
+            color: #111827;
+            display: flex;
+            align-items: center;
+        }
+        .section-title span {
+            margin-left: 10px;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #6b7280;
+        }
+        .intro-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            margin-bottom: 20px;
+            border-top: 4px solid #e62429;
+        }
+        .intro-card p {
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+        .intro-card p:last-child {
+            margin-bottom: 0;
+        }
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            margin: 20px 0 40px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+            border-bottom-color: #e62429;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #4b5563;
+        }
+        .featured-list {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            margin-bottom: 30px;
+        }
+        .featured-list ol {
+            padding-left: 20px;
+        }
+        .featured-list li {
+            margin-bottom: 18px;
+            padding-left: 8px;
+        }
+        .featured-list strong {
+            color: #e62429;
+        }
+        .featured-list .desc {
+            display: block;
+            color: #4b5563;
+            font-size: 0.95rem;
+            margin-top: 4px;
+        }
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .info-box {
+            background: #fff;
+            border-radius: 14px;
+            padding: 26px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+        .info-box h3 {
+            color: #1a1a2e;
+            margin-bottom: 14px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+        .info-box ul {
+            list-style: none;
+        }
+        .info-box ul li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #e5e7eb;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+        .info-box ul li::before {
+            content: "🕷️";
+            font-size: 0.8rem;
+            margin-top: 2px;
+        }
+        .faq-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            margin-bottom: 30px;
+        }
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+        .faq-item h3 {
+            font-size: 1.1rem;
+            color: #111827;
+            margin-bottom: 8px;
+            padding-left: 28px;
+            position: relative;
+        }
+        .faq-item h3::before {
+            content: "Q";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #e62429;
+            color: #fff;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        .faq-item p {
+            padding-left: 28px;
+            color: #4b5563;
+            font-size: 0.95rem;
+        }
+        .tips-box {
+            background: #fef9c3;
+            border-left: 5px solid #fbbf24;
+            padding: 20px 24px;
+            border-radius: 0 12px 12px 0;
+            margin: 30px 0;
+        }
+        .tips-box h3 {
+            color: #92400e;
+            margin-bottom: 8px;
+        }
+        .tips-box ul {
+            margin-left: 20px;
+            color: #78350f;
+        }
+        footer.site-footer {
+            background: #1a1a2e;
+            color: #9ca3af;
+            padding: 40px 0 30px;
+            margin-top: 50px;
+            border-top: 4px solid #e62429;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .footer-brand p {
+            font-size: 0.9rem;
+            max-width: 300px;
+        }
+        .footer-links a {
+            color: #9ca3af;
+            text-decoration: none;
+            margin-right: 18px;
+            font-size: 0.9rem;
+        }
+        .footer-links a:hover {
+            color: #fff;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #2d3a55;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+            nav.main-nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 14px;
+            }
+            .hero h2 {
+                font-size: 1.7rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .section-title {
+                font-size: 1.5rem;
+                margin-top: 35px;
+            }
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+            .grid-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 14px;
+            }
+            .brand h1 {
+                font-size: 1.5rem;
+            }
+            .hero {
+                padding: 40px 0;
+            }
+            .hero h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1>蜘蛛侠漫画</h1>
+                <p>Marvel 最受欢迎超级英雄的漫画宇宙全解析</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#origin">起源经典</a></li>
+                    <li><a href="#guides">阅读指南</a></li>
+                    <li><a href="#multiverse">多元宇宙</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>蜘蛛侠漫画：从街区英雄到多元宇宙传奇</h2>
+            <p>无论你是初次接触蜘蛛侠漫画的新读者，还是想深入了解不同平行宇宙故事的老粉丝，这里都为你梳理了最清晰的阅读路径与核心作品推荐。</p>
+            <div class="hero-tags">
+                <span>🕷️ 彼得·帕克</span>
+                <span>🌌 迈尔斯·莫拉莱斯</span>
+                <span>📚 经典连载</span>
+                <span>🎬 电影联动</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="origin">
+            <h2 class="section-title">经典起源<span>Amazing Fantasy #15 (1962)</span></h2>
+            <div class="intro-card">
+                <p>蜘蛛侠漫画最早登场于1962年的《Amazing Fantasy》第15期，由斯坦·李和史蒂夫·迪特科共同创作。与当时大多数超级英雄不同，彼得·帕克是一名普通的高中生，他内向、害羞，还经常被同学排挤。被放射性蜘蛛咬伤后，他获得了超能力，却因为一次没有出手阻止抢劫，导致本叔遇害。那句“能力越大，责任越大”从此成为超级英雄漫画中最著名的格言之一。</p>
+                <p>正是这种贴近普通人的设定，让蜘蛛侠漫画在六十多年间始终保持旺盛生命力。他需要面对学业、工作、感情、金钱问题，同时还要保护纽约市。这种“平民英雄”的独特定位，是蜘蛛侠漫画经久不衰的核心魅力。</p>
+            </div>
+        </section>
+
+        <section id="main-series">
+            <h2 class="section-title">核心主刊系列<span>长期连载的支柱</span></h2>
+            <div class="grid-cards">
+                <article class="card">
+                    <h3>Amazing Spider-Man</h3>
+                    <p>1963年创刊的旗舰系列，是蜘蛛侠漫画最核心的主线故事，彼得·帕克的主要冒险都在这里展开。截至目前已连载超过900期，是漫威最长寿的漫画之一。</p>
+                </article>
+                <article class="card">
+                    <h3>Ultimate Spider-Man</h3>
+                    <p>2000年推出的重启系列，以现代背景重新讲述蜘蛛侠的起源故事。画风清新、节奏明快，非常推荐新读者从这里入手。迈尔斯·莫拉莱斯也正是诞生于这个宇宙。</p>
+                </article>
+                <article class="card">
+                    <h3>Superior Spider-Man</h3>
+                    <p>2013年的高概念剧情：章鱼博士的意识占据彼得·帕克的身体，试图成为“更优秀的蜘蛛侠”。这个系列对蜘蛛侠漫画的设定进行了大胆解构，结局感人且震撼。</p>
+                </article>
+                <article class="card">
+                    <h3>Spectacular Spider-Man</h3>
+                    <p>与主刊并行的长期连载系列，侧重展现彼得·帕克的日常生活、感情关系以及更接地气的街头冒险，人物塑造细腻，深受老读者喜爱。</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="guides">
+            <h2 class="section-title">必读篇章推荐<span>故事线 / 事件</span></h2>
+            <div class="featured-list">
+                <ol>
+                    <li>
+                        <strong>The Night Gwen Stacy Died</strong> (Amazing Spider-Man #121-122)
+                        <span class="desc">1973年的经典悲剧，格温·斯黛西之死彻底改变了蜘蛛侠漫画的基调，也是美漫历史上最著名的转折点之一。</span>
+                    </li>
+                    <li>
+                        <strong>Kraven's Last Hunt</strong> (1987)
+                        <span class="desc">猎人克莱文最后一次挑战蜘蛛侠，黑暗、深刻、心理描写极佳，被公认为蜘蛛侠漫画最伟大的故事之一。</span>
+                    </li>
+                    <li>
+                        <strong>Spider-Verse</strong> (2014)
+                        <span class="desc">多元宇宙蜘蛛侠大集结，对抗继承者家族。这个事件直接启发了动画电影《蜘蛛侠：平行宇宙》的创作。</span>
+                    </li>
+                    <li>
+                        <strong>Ultimate Spider-Man: Death of Spider-Man</strong> (2011)
+                        <span class="desc">终极宇宙彼得·帕克的悲壮谢幕，为迈尔斯·莫拉莱斯的登场铺平道路，情感冲击力极强。</span>
+                    </li>
+                    <li>
+                        <strong>Back to Basics</strong> (Amazing Spider-Man #1, 2018)
+                        <span class="desc">尼克·斯宾塞接手后的全新起点，回归彼得·帕克“穷困潦倒但乐观向上”的经典形象，适合新老读者过渡。</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="multiverse">
+            <h2 class="section-title">重要蜘蛛侠角色<span>不止一个蜘蛛侠</span></h2>
+            <div class="two-col">
+                <div class="info-box">
+                    <h3>🕷️ 经典蜘蛛侠</h3>
+                    <ul>
+                        <li>彼得·帕克：主宇宙616的原版蜘蛛侠，科学与责任感的化身。</li>
+                        <li>迈尔斯·莫拉莱斯：终极宇宙/主宇宙的黑人拉丁裔蜘蛛侠，毒液电击能力。</li>
+                        <li>格温·斯黛西（蜘蛛格温）：来自地球-65，自己成为被放射性蜘蛛咬伤的蜘蛛女侠。</li>
+                        <li>本·莱利：彼得·帕克的克隆体，曾短暂担任猩红蜘蛛。</li>
+                        <li>奥托·奥克塔维斯（究极蜘蛛侠）：章鱼博士占据彼得身体后的形态。</li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <h3>🌌 多元宇宙变体</h3>
+                    <ul>
+                        <li>蜘蛛侠2099（米格尔·奥哈拉）：未来赛博朋克世界的蜘蛛侠。</li>
+                        <li>暗影蜘蛛侠：30年代黑白画风的硬汉版蜘蛛侠。</li>
+                        <li>蜘蛛侠印度（帕维特·帕拉巴卡尔）：孟买版蜘蛛侠。</li>
+                        <li>蜘猪侠（彼得·波克）：卡通猪世界的搞笑变体。</li>
+                        <li>日漫蜘蛛侠（Supaidāman）：参考日本特摄剧的独特版本。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="tips-box">
+            <h3>💡 阅读建议</h3>
+            <ul>
+                <li>新读者建议从 <strong>Ultimate Spider-Man (2000)</strong> 第1期开始，容易上手且独立成篇。</li>
+                <li>想了解当前主线，可从 <strong>Amazing Spider-Man (2018)</strong> 第1期或 <strong>Amazing Spider-Man (2022)</strong> 第1期开始。</li>
+                <li>喜欢平行宇宙和宏大世界观，推荐阅读 <strong>Spider-Verse</strong> 及后续相关联动。</li>
+                <li>注意不同系列之间可能存在微妙的连续性差异，阅读时不必过于纠结时间线。</li>
+            </ul>
+        </div>
+
+        <section id="faq">
+            <h2 class="section-title">常见问题 FAQ</h2>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <h3>蜘蛛侠漫画应该从哪里开始看？</h3>
+                    <p>最推荐的两大入口：一是2000年的《Ultimate Spider-Man》第1期，画风现代、叙事通俗，是很多当代读者的入坑首选；二是2018年《Amazing Spider-Man》第1期，作为主宇宙的新起点，不需要太多前情知识。如果你对经典老漫画有怀旧情结，也可以从1963年的Amazing Spider-Man第1期开始，但早期画风和叙事节奏与现代读者习惯差异较大。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>蜘蛛侠漫画和电影有什么区别？</h3>
+                    <p>电影（尤其是MCU版）借鉴了漫画的核心设定和部分经典情节，但进行了大量改编和压缩。漫画的世界观更广阔、支线更多、角色关系更复杂。例如，漫画中彼得·帕克曾向梅姨透露身份、玛丽·简长期知道他的秘密等，与电影有所不同。漫画中还有大量电影未展现的经典反派和盟友。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>迈尔斯·莫拉莱斯在漫画里是怎么出现的？</h3>
+                    <p>迈尔斯最初登场于2011年的《Ultimate Fallout》第4期，在终极宇宙彼得·帕克死后被另一只放射性蜘蛛咬伤。后来在2015年的“Secret Wars”事件后，迈尔斯被并入主宇宙616，成为与彼得·帕克并列的重要蜘蛛侠。他拥有隐身和生物电击（毒液冲击）等独特能力。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>蜘蛛侠漫画有那么多平行宇宙，会不会混乱？</h3>
+                    <p>对于普通读者来说，只需关注主宇宙（Earth-616）的故事即可。平行宇宙故事通常发生在独立系列或特定事件中，官方会明确标注“Earth-XXXX”编号。如果只想看彼得·帕克的主线故事，基本不会受到多元宇宙设定的干扰。参与大事件（如Spider-Verse）时，建议提前了解相关角色背景，但大多数漫画都会在对话中自然交代必要信息。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>哪些蜘蛛侠漫画适合青少年阅读？</h3>
+                    <p>《Ultimate Spider-Man》是公认适合全年龄段的优秀作品，画风明快，内容积极。近年来的《Spider-Man: Life Story》（2019）以彼得·帕克真实年龄衰老为主线，虽然涉及一些严肃主题，但表达方式克制，也适合青少年读者。漫威也有专门的“Marvel Adventures”系列，定位更加低龄，适合更小的读者。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="themes">
+            <h2 class="section-title">主题延伸<span>蜘蛛侠漫画的深层魅力</span></h2>
+            <div class="two-col">
+                <div class="info-box">
+                    <h3>📖 责任与牺牲</h3>
+                    <p>“能力越大，责任越大”是蜘蛛侠故事永恒的核心。不同于许多超级英雄的宏大使命，蜘蛛侠的责任往往体现在帮助邻里、挽救普通人的生命。他的牺牲精神、对亲友的愧疚与守护，让这个角色在深度上远超一般的青少年英雄。</p>
+                </div>
+                <div class="info-box">
+                    <h3>💔 普通人困境</h3>
+                    <p>彼得·帕克始终面临经济拮据、工作压力、感情波折等问题。他不是一个完美的英雄，会犯错、会犹豫、会失败。这种真实感让读者产生强烈共鸣——他首先是彼得·帕克，然后才是蜘蛛侠。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 style="color:#fff;font-size:1.3rem;">蜘蛛侠漫画</h3>
+                    <p>一个专注于蜘蛛侠漫画知识分享与阅读推荐的爱好者站点，不隶属于漫威或任何版权方。</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#origin">起源</a>
+                    <a href="#main-series">主刊</a>
+                    <a href="#guides">推荐</a>
+                    <a href="#multiverse">角色</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 蜘蛛侠漫画阅读指南 · 仅供学习交流 · 漫画版权归 Marvel Comics 所有</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+</html>
